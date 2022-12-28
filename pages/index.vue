@@ -1,15 +1,13 @@
 <template>
   <div class="center">
-    <img src="/img/logo.svg" />
+    <img src="/img/logo.svg" alt="Logo de Libère ta plume"/>
 
     <div class="icons">
-      <a class="icon" href="#" target="_blank">
-        <img src="/img/icons/google-maps.svg" />
-      </a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/instagram.svg" /></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/facebook.svg" /></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/linkedin.svg" /></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/email-outline.svg" /></a>
+      <a class="icon" href="#" target="_blank"><img src="/img/icons/google-maps.svg" alt="Fiche Google Maps de Libère ta plume"/></a>
+      <a class="icon" href="#" target="_blank"><img src="/img/icons/instagram.svg" alt="Page instagram de Libère ta plume"/></a>
+      <a class="icon" href="#" target="_blank"><img src="/img/icons/facebook.svg" alt="Page Facebook de Libère ta plume"/></a>
+      <a class="icon" href="#" target="_blank"><img src="/img/icons/linkedin.svg" alt="Page Linkedin de Libère ta plume"/></a>
+      <a class="icon" href="#" target="_blank"><img src="/img/icons/email-outline.svg" alt="Email de Libère ta plume"/></a>
     </div>
   </div>
   

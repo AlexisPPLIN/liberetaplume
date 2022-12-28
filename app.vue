@@ -2,7 +2,7 @@
   <transition name="list">
     <div class="loading-div" v-if="loading">
       <img src="/img/icons/feather.svg" />
-      Chargement...
+      <span>Chargement...</span>
     </div>
   </transition>
 
@@ -22,6 +22,14 @@ body,
   height: 100vh;
 }
 
+@font-face {
+  font-family: 'free_penregular';
+  src: url('~/assets/fonts/free_pen.woff2') format('woff2'),
+      url('~/assets/fonts/free_pen.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .loading-div {
   display: flex;
   flex-direction: column;
@@ -30,11 +38,16 @@ body,
   height: 100vh;
   width: 100vw;
   background-color: #ebe3d9ff;
+  font-family: 'free_penregular';
 }
 
 .loading-div img {
   height: 5em;
   animation: breathing 5s ease-out infinite normal;
+}
+
+.loading-div span {
+  font-size: 3em;
 }
 
 .list-enter,
@@ -53,27 +66,15 @@ body,
 
 @keyframes breathing {
   0% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+    transform: translateX(-40px);
   }
 
-  25% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-
-  60% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+  50% {
+    transform: translateX(70px);
   }
 
   100% {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+    transform: translateX(-40px);
   }
 }
 
@@ -86,6 +87,5 @@ body,
   loading.value = true;
   nuxtApp.hook("page:finish", () => {
     loading.value = false;
-    console.log("finished");
   });
 </script>
