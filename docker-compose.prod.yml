@@ -2,8 +2,10 @@ version: "3.3"
 
 services:
   traefik:
-    image: "traefik:v2.9"
+    image: "traefik:v3.0"
     restart: always
+    depends_on:
+      - app
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
