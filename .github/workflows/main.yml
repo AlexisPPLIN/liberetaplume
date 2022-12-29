@@ -29,7 +29,11 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/liberetaplume:latest
-      
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to Docker Compose
         uses: wshihadeh/docker-deployment-action@v1
         with:
@@ -42,3 +46,4 @@ jobs:
           deploy_path: /root/liberetaplume
           stack_file_name: docker-compose.prod.yaml
           keep_files: 5
+          args: liberetaplume
