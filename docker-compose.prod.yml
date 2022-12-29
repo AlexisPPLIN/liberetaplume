@@ -10,6 +10,7 @@ services:
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
       # ...
+      - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
       - "--certificatesresolvers.myresolver.acme.email=contact@alexispoupelin.com"
       - "--certificatesresolvers.myresolver.acme.storage=acme.json"
       # used during the challenge
