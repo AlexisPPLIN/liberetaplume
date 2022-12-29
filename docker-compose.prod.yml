@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+  traefik:
+    image: "traefik:v2.9"
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+  app:
+    image: ekode/liberetaplume:latest
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.app.rule=Host(`liberetaplume.fr`)"
+      - "traefik.http.routers.app.entrypoints=web"
