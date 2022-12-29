@@ -3,18 +3,34 @@ version: "3.3"
 services:
   traefik:
     image: "traefik:v2.9"
+    restart: always
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      # ...
+      - "--certificatesresolvers.myresolver.acme.email=contact@alexispoupelin.com"
+      - "--certificatesresolvers.myresolver.acme.storage=acme.json"
+      # used during the challenge
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
     ports:
       - "80:80"
+      - "443:443"
     volumes:
+      - letsencrypt:/acme.json
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
-
   app:
     image: ekode/liberetaplume:latest
+    restart: always
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.app.rule=Host(`liberetaplume.fr`)"
       - "traefik.http.routers.app.entrypoints=web"
+      - "traefik.http.routers.app.tls=true"
+      - "traefik.http.routers.blog.tls.certresolver=myresolver"
+
+volumes:
+  letsencrypt:
