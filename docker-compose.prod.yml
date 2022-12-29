@@ -30,7 +30,7 @@ services:
       - "traefik.http.routers.app.rule=Host(`liberetaplume.fr`)"
       - "traefik.http.routers.app.entrypoints=web"
       - "traefik.http.routers.app.tls=true"
-      - "traefik.http.routers.blog.tls.certresolver=myresolver"
+      - "traefik.http.routers.app.tls.certresolver=myresolver"
 
 volumes:
   letsencrypt:
