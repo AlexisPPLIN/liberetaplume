@@ -42,7 +42,6 @@ jobs:
           ssh_public_key: ${{ secrets.DOCKER_SSH_PUBLIC_KEY }}
           deployment_mode: docker-compose
           copy_stack_file: true
-          docker_prune: true
           deploy_path: /root/liberetaplume
           stack_file_name: docker-compose.prod.yaml
           keep_files: 5
