@@ -10,7 +10,10 @@ export default defineNuxtConfig({
             ],
             link: [
                 { rel: 'icon', type: 'image/svg+xml', href: '/img/icons/feather.svg' }
-            ]
+            ],
+            htmlAttrs: {
+                lang: 'fr'
+            }
         }
     }
 });
