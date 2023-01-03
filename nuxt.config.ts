@@ -13,6 +13,8 @@ export default defineNuxtConfig({
                 { name: 'og:locale', content: 'fr_FR' },
                 { name: 'og:image', content: 'https://liberetaplume.fr/img/logo.png' },
                 { name: 'og:image:alt', content: 'Logo de Libère ta plume' },
+                { name: 'og:image:height', content: '399' },
+                { name: 'og:image:width', content: '399' },
             ],
             link: [
                 { rel: 'icon', type: 'image/svg+xml', href: '/img/icons/feather-filled.svg' },
