@@ -5,9 +5,10 @@
     <div class="icons">
       <a class="icon" href="#" target="_blank"><img src="/img/icons/google-maps.svg" alt="Fiche Google Maps de Libère ta plume"/></a>
       <a class="icon" href="#" target="_blank"><img src="/img/icons/instagram.svg" alt="Page instagram de Libère ta plume"/></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/facebook.svg" alt="Page Facebook de Libère ta plume"/></a>
+      <a class="icon" href="https://www.facebook.com/profile.php?id=100089095176948" target="_blank"><img src="/img/icons/facebook.svg" alt="Page Facebook de Libère ta plume"/></a>
       <a class="icon" href="#" target="_blank"><img src="/img/icons/linkedin.svg" alt="Page Linkedin de Libère ta plume"/></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/email-outline.svg" alt="Email de Libère ta plume"/></a>
+      <a class="icon" href="mailto:contact@liberetaplume.fr" target="_blank"><img src="/img/icons/email-outline.svg" alt="Email de Libère ta plume"/></a>
+      <a class="icon" href="tel:+33783751583"><img src="/img/icons/phone.svg" alt="Numéro de téléphone de Libère ta plume"/></a>
     </div>
   </div>
   

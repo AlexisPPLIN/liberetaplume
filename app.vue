@@ -28,6 +28,7 @@ body,
       url('~/assets/fonts/free_pen.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .loading-div {
