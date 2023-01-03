@@ -10,6 +10,7 @@ export default defineNuxtConfig({
                 // Open graph
                 { name: 'og:type', content: 'website' },
                 { name: 'og:title', content: 'Libère ta plume - Graphothérapeute' },
+                { name: 'og:description', content: 'Libère ta plume est un cabinet de Graphothérapie.' },
                 { name: 'og:url', content: 'https://liberetaplume.fr' },
                 { name: 'og:locale', content: 'fr_FR' },
                 { name: 'og:image', content: 'https://liberetaplume.fr/img/logo.png' },
