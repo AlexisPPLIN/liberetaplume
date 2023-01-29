@@ -69,3 +69,7 @@
     transform: scale(1.5);
   }
 </style>
+
+<script setup>
+
+</script>
