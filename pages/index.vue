@@ -1,7 +1,6 @@
 <template>
   <div class="center">
     <img src="/img/logo.svg" alt="Logo de Libère ta plume"/>
-
     <div class="icons">
       <a class="icon" href="#" target="_blank"><img src="/img/icons/google-maps.svg" alt="Fiche Google Maps de Libère ta plume"/></a>
       <a class="icon" href="#" target="_blank"><img src="/img/icons/instagram.svg" alt="Page instagram de Libère ta plume"/></a>
@@ -10,6 +9,7 @@
       <a class="icon" href="mailto:contact@liberetaplume.fr" target="_blank"><img src="/img/icons/email-outline.svg" alt="Email de Libère ta plume"/></a>
       <a class="icon" href="tel:+33783751583"><img src="/img/icons/phone.svg" alt="Numéro de téléphone de Libère ta plume"/></a>
     </div>
+    <h1 style="visibility: hidden;">Libère ta plume - Graphothérapie</h1>
   </div>
   
 </template>

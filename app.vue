@@ -1,7 +1,7 @@
 <template>
   <transition name="list">
     <div class="loading-div" v-if="loading">
-      <img src="/img/icons/feather.svg" />
+      <img src="/img/icons/feather.svg" alt="Icône de chargement en forme de plume"/>
       <span>Chargement...</span>
     </div>
   </transition>
