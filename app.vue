@@ -1,14 +1,17 @@
 <template>
-  <transition name="list">
+  <Transition name="loading">
     <div class="loading-div" v-if="loading">
-      <img src="/img/icons/feather.svg" alt="Icône de chargement en forme de plume"/>
-      <span>Chargement...</span>
+        <img src="/img/icons/feather.svg" alt="Icône de chargement en forme de plume"/>
+        <span>Chargement...</span>
     </div>
-  </transition>
-
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  </Transition>
+  <Transition>
+    <div id="main" v-show="!loading">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </div>
+  </Transition>
 </template>
 
 <style>
@@ -16,7 +19,8 @@
   margin: 0 !important;
 }
 body,
-#__nuxt {
+#__nuxt,
+#main {
   background-color: #ebe3d9ff;
   width: 100vw;
   height: 100vh;
@@ -30,6 +34,16 @@ body,
   font-style: normal;
   font-display: swap;
 }
+
+  .center
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;    
+  }
 
 .loading-div {
   display: flex;
@@ -51,19 +65,17 @@ body,
   font-size: 3em;
 }
 
-.list-enter,
-.list-leave-to {
+/* Loading slide-out transition */
+
+.loading-leave-to {
   visibility: hidden;
-  height: 0;
-  margin: 0;
-  padding: 0;
   opacity: 0;
 }
 
-.list-enter-active,
-.list-leave-active {
+.loading-leave-active {
   transition: all 0.3s;
 }
+
 
 @keyframes breathing {
   0% {

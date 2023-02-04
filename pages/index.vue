@@ -1,35 +1,16 @@
 <template>
   <div class="center">
     <img src="/img/logo.svg" alt="Logo de Libère ta plume"/>
-    <div class="icons">
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/google-maps.svg" alt="Fiche Google Maps de Libère ta plume"/></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/instagram.svg" alt="Page instagram de Libère ta plume"/></a>
-      <a class="icon" href="https://www.facebook.com/profile.php?id=100089095176948" target="_blank"><img src="/img/icons/facebook.svg" alt="Page Facebook de Libère ta plume"/></a>
-      <a class="icon" href="#" target="_blank"><img src="/img/icons/linkedin.svg" alt="Page Linkedin de Libère ta plume"/></a>
-      <a class="icon" href="mailto:contact@liberetaplume.fr" target="_blank"><img src="/img/icons/email-outline.svg" alt="Email de Libère ta plume"/></a>
-      <a class="icon" href="tel:+33783751583"><img src="/img/icons/phone.svg" alt="Numéro de téléphone de Libère ta plume"/></a>
-    </div>
     <h1 style="visibility: hidden;">Libère ta plume - Graphothérapie</h1>
+    <Nav />
   </div>
   
 </template>
 
 <style scoped>
-  .center
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    
-  }
-
   .center > img {
     width: 70%;
-    height: 70%;
+    height: 50%;
     margin-bottom: 1% !important;
   }
 
