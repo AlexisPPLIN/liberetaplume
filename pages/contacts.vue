@@ -1,6 +1,6 @@
 <template>
   <div class="center">
-    <h1>Libère ta plume - Graphothérapie</h1>
+    <h1>Me contacter</h1>
 
     <div class="icons">
       <a class="icon" href="#" target="_blank"><img src="/img/icons/google-maps.svg" alt="Fiche Google Maps de Libère ta plume"/></a>

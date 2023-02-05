@@ -1,11 +1,13 @@
 <template>
   <nav>
-    <NuxtLink to="/" class="underline">Accueil</NuxtLink>
+    <NuxtLink to="/">Accueil</NuxtLink>
     <span class="separator">&bull;</span>
+    <!--
     <NuxtLink to="/graphotherapie" >La Graphothérapie</NuxtLink>
     <span class="separator">&bull;</span>
     <NuxtLink to="/tarifs" >Mes tarifs</NuxtLink>
     <span class="separator">&bull;</span>
+    -->
     <NuxtLink to="/contacts" >Me contacter</NuxtLink>
   </nav>
 </template>
@@ -23,7 +25,6 @@ export default {
     font-size: 2em;
     align-items: center;
     justify-content: center;
-    height: 10vh;
     column-gap: 2%;
     width: 100vw;
     z-index: 1;
@@ -34,7 +35,7 @@ export default {
     color: black;
   }
 
-  nav .underline {
+  nav a.router-link-active {
     text-decoration-line: underline;
   }
 

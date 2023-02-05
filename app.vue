@@ -1,8 +1,11 @@
 <template>
   <Transition name="loading">
     <div class="loading-div" v-if="loading">
-        <img src="/img/icons/feather.svg" alt="Icône de chargement en forme de plume"/>
-        <span>Chargement...</span>
+      <img
+        src="/img/icons/feather.svg"
+        alt="Icône de chargement en forme de plume"
+      />
+      <span>Chargement...</span>
     </div>
   </Transition>
   <Transition>
@@ -27,23 +30,22 @@ body,
 }
 
 @font-face {
-  font-family: 'free_penregular';
-  src: url('~/assets/fonts/free_pen.woff2') format('woff2'),
-      url('~/assets/fonts/free_pen.woff') format('woff');
+  font-family: "free_penregular";
+  src: url("~/assets/fonts/free_pen.woff2") format("woff2"),
+    url("~/assets/fonts/free_pen.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-  .center
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;    
-  }
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
 .loading-div {
   display: flex;
@@ -53,7 +55,7 @@ body,
   height: 100vh;
   width: 100vw;
   background-color: #ebe3d9ff;
-  font-family: 'free_penregular';
+  font-family: "free_penregular";
 }
 
 .loading-div img {
@@ -67,15 +69,16 @@ body,
 
 /* Loading slide-out transition */
 
+.loading-enter-from,
 .loading-leave-to {
   visibility: hidden;
   opacity: 0;
 }
 
+.loading-enter-active,
 .loading-leave-active {
   transition: all 0.3s;
 }
-
 
 @keyframes breathing {
   0% {
@@ -90,15 +93,13 @@ body,
     transform: translateX(-40px);
   }
 }
-
 </style>
 
 <script setup lang="ts">
-  const nuxtApp = useNuxtApp();
-  const loading = ref(false);
+const nuxtApp = useNuxtApp();
+const loading = ref(true);
 
-  loading.value = true;
-  nuxtApp.hook("page:finish", () => {
-    loading.value = false;
-  });
+nuxtApp.hook("page:finish", () => {
+  loading.value = false;
+});
 </script>
