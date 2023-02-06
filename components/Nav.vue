@@ -28,6 +28,8 @@ export default {
     column-gap: 2%;
     width: 100vw;
     z-index: 1;
+    position: fixed;
+    bottom: 2%;
   }
 
   nav a {

@@ -27,12 +27,21 @@ body,
   background-color: #ebe3d9ff;
   width: 100vw;
   height: 100vh;
+  font-family: "hynings_handwriting";
 }
 
 @font-face {
   font-family: "free_penregular";
   src: url("~/assets/fonts/free_pen.woff2") format("woff2"),
     url("~/assets/fonts/free_pen.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "hynings_handwriting";
+  src: url("~/assets/fonts/HyningsHandwritingV2-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -55,12 +64,12 @@ body,
   height: 100vh;
   width: 100vw;
   background-color: #ebe3d9ff;
-  font-family: "free_penregular";
+  font-family: "hynings_handwriting";
 }
 
 .loading-div img {
   height: 5em;
-  animation: breathing 5s ease-out infinite normal;
+  animation: breathing 3s ease-out infinite normal;
 }
 
 .loading-div span {
@@ -82,7 +91,7 @@ body,
 
 @keyframes breathing {
   0% {
-    transform: translateX(-40px);
+    transform: translateX(-60px);
   }
 
   50% {
@@ -90,7 +99,7 @@ body,
   }
 
   100% {
-    transform: translateX(-40px);
+    transform: translateX(-60px);
   }
 }
 </style>
