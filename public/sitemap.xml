@@ -4,7 +4,14 @@
 
     <url>
         <loc>https://liberetaplume.fr</loc>
-        <lastmod>2023-01-03</lastmod>
+        <lastmod>2023-02-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://liberetaplume.fr/contacts</loc>
+        <lastmod>2023-02-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
