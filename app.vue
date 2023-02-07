@@ -8,6 +8,9 @@
       <span>Chargement...</span>
     </div>
   </Transition>
+
+  <SeoKit />
+
   <Transition>
     <div id="main" v-show="!loading">
       <NuxtLayout>
@@ -111,4 +114,16 @@ const loading = ref(true);
 nuxtApp.hook("page:finish", () => {
   loading.value = false;
 });
+
+useSchemaOrg([
+  defineOrganization({
+    name: 'Libère ta plume',
+    logo: '/img/logo.png',
+    sameAs: [
+      'https://twitter.com/company'
+    ]
+  }),
+  defineWebSite(),
+  defineWebPage(),
+])
 </script>
