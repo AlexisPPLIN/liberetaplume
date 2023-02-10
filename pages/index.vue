@@ -58,6 +58,7 @@
       logo: '/img/logo.png',
       telephone: '07 83 75 15 83',
       email: 'contact@liberetaplume.fr',
+      image: 'https://liberetaplume.fr/img/logo.png',
       address: {
         addressCountry: 'FR',
         postalCode: '85500',
