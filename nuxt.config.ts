@@ -21,11 +21,13 @@ export default defineNuxtConfig({
                 { name: 'og:image:width', content: '399' },
             ],
             link: [
+                { rel: 'icon', sizes: 'any', href: '/img/favicons/favicon.ico' },
                 { rel: 'icon', type: 'image/svg+xml', href: '/img/favicons/favicon.svg' },
                 { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/favicons/favicon_32x32.png' },
                 { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/img/favicons/favicon_128x128.png' },
                 { rel: 'icon', type: 'image/png', sizes: '180x180', href: '/img/favicons/favicon_180x180.png' },
                 { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/img/favicons/favicon_192x192.png' },
+                { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/img/favicons/favicon_180x180.png' },
             ],
             htmlAttrs: {
                 lang: 'fr'

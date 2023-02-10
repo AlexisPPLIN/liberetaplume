@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <NuxtLink to="/">Accueil</NuxtLink>
+  <ul class="breadcrumb" aria-label="Breadcrumb">
+    <li><NuxtLink to="/" ariaCurrentValue="page">Accueil</NuxtLink></li>
     <span class="separator">&bull;</span>
     <!--
     <NuxtLink to="/graphotherapie" >La Graphothérapie</NuxtLink>
@@ -8,8 +8,8 @@
     <NuxtLink to="/tarifs" >Mes tarifs</NuxtLink>
     <span class="separator">&bull;</span>
     -->
-    <NuxtLink to="/contacts" >Me contacter</NuxtLink>
-  </nav>
+    <li><NuxtLink to="/contacts" ariaCurrentValue="page">Me contacter</NuxtLink></li>
+  </ul>
 </template>
 
 <script>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-  nav {
+  .breadcrumb {
     display: flex;
     flex-direction: column;
     font-size: 2em;
@@ -32,12 +32,17 @@ export default {
     bottom: 2%;
   }
 
-  nav a {
+  .breadcrumb a {
     text-decoration: none;
     color: black;
   }
 
-  nav a.router-link-active {
+  .breadcrumb li
+  {
+    list-style-type: none;
+  }
+
+  .breadcrumb a.router-link-active {
     text-decoration-line: underline;
   }
 
@@ -46,7 +51,7 @@ export default {
   }
 
   @media only screen and (min-width: 768px) {
-    nav {
+    .breadcrumb {
       flex-direction: row;
     }
 
