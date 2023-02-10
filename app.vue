@@ -114,38 +114,4 @@ const loading = ref(true);
 nuxtApp.hook("page:finish", () => {
   loading.value = false;
 });
-
-useSchemaOrg([
-  defineLocalBusiness({
-    name: 'Libère ta plume - Graphothérapie',
-    logo: '/img/logo.png',
-    telephone: '07 83 75 15 83',
-    email: 'contact@liberetaplume.fr',
-    address: {
-      addressCountry: 'FR',
-      postalCode: '85500',
-      streetAddress: '76 Rue Yves Ramoz',
-      addressLocality: 'Saint-Paul-en-Pareds'
-    },
-    openingHoursSpecification: [
-      {
-        dayOfWeek: 'Wednesday',
-        opens: '09:00',
-        closes: '12:00',
-      },
-      {
-        dayOfWeek: 'Wednesday',
-        opens: '14:00',
-        closes: '18:00',
-      },
-      {
-        dayOfWeek: 'Saturday',
-        opens: '09:00',
-        closes: '12:00',
-      },
-    ]
-  }),
-  defineWebSite(),
-  defineWebPage(),
-])
 </script>
