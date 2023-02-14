@@ -1,13 +1,6 @@
 <template>
   <ul class="breadcrumb" aria-label="Breadcrumb">
     <li><NuxtLink to="/" ariaCurrentValue="page">Accueil</NuxtLink></li>
-    <span class="separator">&bull;</span>
-    <!--
-    <NuxtLink to="/graphotherapie" >La Graphothérapie</NuxtLink>
-    <span class="separator">&bull;</span>
-    <NuxtLink to="/tarifs" >Mes tarifs</NuxtLink>
-    <span class="separator">&bull;</span>
-    -->
     <li><NuxtLink to="/contacts" ariaCurrentValue="page">Me contacter</NuxtLink></li>
   </ul>
 </template>
@@ -25,7 +18,6 @@ export default {
     font-size: 2em;
     align-items: center;
     justify-content: center;
-    column-gap: 2%;
     width: 100vw;
     z-index: 1;
     position: fixed;
@@ -54,11 +46,20 @@ export default {
   @media only screen and (min-width: 768px) {
     .breadcrumb {
       flex-direction: row;
-
     }
 
     .separator {
       display: block;
+    }
+
+    .breadcrumb li:after {
+      content: "\2022";
+      padding: 0 2rem;
+    }
+
+    .breadcrumb li:last-child:after {
+      content: '';
+      padding: 0 0rem;
     }
   }
 </style>

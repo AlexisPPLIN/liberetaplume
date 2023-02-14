@@ -25,6 +25,14 @@ export default defineNuxtConfig({
                 lang: 'fr'
             },
         },
+        pageTransition: {      
+            name: 'loading',
+            appear: true
+        },    
+        layoutTransition: {      
+            name: 'loading',
+            appear: true
+        }
     },
     extends: [
         'nuxt-seo-kit'

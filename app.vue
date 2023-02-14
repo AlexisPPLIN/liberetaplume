@@ -1,23 +1,8 @@
 <template>
-  <Transition name="loading">
-    <div class="loading-div" v-if="loading">
-      <img
-        src="/img/icons/feather.svg"
-        alt="Icône de chargement en forme de plume"
-      />
-      <span>Chargement...</span>
-    </div>
-  </Transition>
-
   <SeoKit />
-
-  <Transition>
-    <div id="main" v-show="!loading">
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
-    </div>
-  </Transition>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style>
@@ -89,7 +74,7 @@ body,
 
 .loading-enter-active,
 .loading-leave-active {
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 @keyframes breathing {
