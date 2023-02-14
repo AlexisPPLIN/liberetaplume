@@ -30,6 +30,7 @@ export default {
     z-index: 1;
     position: fixed;
     bottom: 2%;
+    padding: 0%;
   }
 
   .breadcrumb a {
@@ -53,6 +54,7 @@ export default {
   @media only screen and (min-width: 768px) {
     .breadcrumb {
       flex-direction: row;
+
     }
 
     .separator {

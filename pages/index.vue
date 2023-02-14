@@ -85,5 +85,10 @@
     }),
     defineWebSite(),
     defineWebPage(),
-  ])
+  ]);
+
+  definePageMeta({
+    title: ' ',
+  });
+
 </script>
