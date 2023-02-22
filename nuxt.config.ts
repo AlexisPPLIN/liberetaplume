@@ -43,6 +43,7 @@ export default defineNuxtConfig({
             siteName: 'Libère ta plume - Graphothérapie',
             siteDescription: "Graphothérapeute vendéenne certifiée en rééducation du geste d'écriture pour enfants et adultes. Aide à l'apprentissage / rééducation du geste d'écriture.",
             language: 'fr-FR',
+            trailingSlash: true,
         }
     },
     nitro: {
@@ -55,5 +56,5 @@ export default defineNuxtConfig({
     },
     linkChecker: {
         failOn404: true
-    }
+    },
 });

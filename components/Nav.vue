@@ -1,7 +1,7 @@
 <template>
   <ul class="breadcrumb" aria-label="Breadcrumb">
     <li><NuxtLink to="/" ariaCurrentValue="page">Accueil</NuxtLink></li>
-    <li><NuxtLink to="/contacts" ariaCurrentValue="page">Me contacter</NuxtLink></li>
+    <li><NuxtLink to="/contacts/" ariaCurrentValue="page">Me contacter</NuxtLink></li>
   </ul>
 </template>
 
