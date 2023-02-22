@@ -10,12 +10,12 @@
 <style scoped>
   h1 {
     font-family: "nixie_one";
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .center > img {
     width: 70%;
-    height: 50%;
+    height: 30%;
     margin-bottom: 1% !important;
   }
 
@@ -23,6 +23,10 @@
     .center > img {
       width: 50%;
       height: 50%;
+    }
+
+    h1 {
+      font-size: 3em;
     }
   }
 
