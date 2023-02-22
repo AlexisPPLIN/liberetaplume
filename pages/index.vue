@@ -1,12 +1,18 @@
 <template>
   <div class="center">
-    <img src="/img/logo.svg" alt="Logo de Libère ta plume" height="303" width="221" />
+    <img src="/img/logo-notitle.svg" alt="Logo de Libère ta plume" height="303" width="221" />
+    <h1>Graphothérapie</h1>
     <Nav />
   </div>
   
 </template>
 
 <style scoped>
+  h1 {
+    font-family: "nixie_one";
+    font-size: 3em;
+  }
+
   .center > img {
     width: 70%;
     height: 50%;

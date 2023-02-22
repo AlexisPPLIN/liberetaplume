@@ -35,6 +35,14 @@ body,
   font-display: swap;
 }
 
+@font-face {
+  font-family: "nixie_one";
+  src: url("~/assets/fonts/NixieOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .center {
   display: flex;
   flex-direction: column;
