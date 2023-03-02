@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     extends: [
         'nuxt-seo-kit'
     ],
+    modules: ['@nuxtjs/plausible'],
     runtimeConfig: {
         public: {
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://liberetaplume.fr',
