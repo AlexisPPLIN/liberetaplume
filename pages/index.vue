@@ -96,8 +96,7 @@
     defineWebPage(),
   ]);
 
-  definePageMeta({
+  useHead({
     title: ' ',
-  });
-
+  })
 </script>

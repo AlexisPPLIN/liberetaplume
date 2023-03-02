@@ -89,4 +89,10 @@
     })
   ]);
 
+  definePageMeta({
+    title: 'Me contacter',
+    meta: [ { name: 'description', content: 'Contactez-moi par téléphone, email ou sur les réseaux sociaux' } ],
+  });
+
+
 </script>
