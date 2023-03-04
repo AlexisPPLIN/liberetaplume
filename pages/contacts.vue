@@ -32,8 +32,6 @@
         <span>07 83 75 15 83</span>
       </a>
     </div>
-    
-    <Nav />
   </div>
   
 </template>

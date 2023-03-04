@@ -1,7 +1,8 @@
 <template>
   <SeoKit />
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage/>
+    <Nav/>
   </NuxtLayout>
 </template>
 

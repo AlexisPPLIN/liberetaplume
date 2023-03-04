@@ -1,7 +1,8 @@
 <template>
   <ul class="breadcrumb" aria-label="Breadcrumb">
     <li><NuxtLink to="/" ariaCurrentValue="page">Accueil</NuxtLink></li>
-    <li><NuxtLink to="/contacts/" ariaCurrentValue="page">Me contacter</NuxtLink></li>
+    <li><NuxtLink to="/tarifs" ariaCurrentValue="page">Mes tarifs</NuxtLink></li>
+    <li><NuxtLink to="/contacts" ariaCurrentValue="page">Me contacter</NuxtLink></li>
   </ul>
 </template>
 
@@ -19,10 +20,11 @@ export default {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    z-index: 1;
+    z-index: 0;
     position: fixed;
-    bottom: 2%;
-    padding: 0%;
+    bottom: 0;
+    padding: 2% 0 2% 0;
+    background-color: #ebe3d9ff;
   }
 
   .breadcrumb a {

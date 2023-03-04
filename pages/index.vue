@@ -2,7 +2,6 @@
   <div class="center">
     <img src="/img/logo-notitle.svg" alt="Logo de Libère ta plume" height="303" width="221" />
     <h1>Graphothérapie</h1>
-    <Nav />
   </div>
   
 </template>
